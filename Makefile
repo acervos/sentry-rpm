@@ -1,4 +1,4 @@
-DOCKER_IMAGE?="davey/sentry-builder"
+DOCKER_IMAGE?="davey/sentry-rpm"
 
 DEFAULT: build
 
