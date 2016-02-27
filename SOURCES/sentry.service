@@ -1,0 +1,12 @@
+[Unit]
+Description=Sentry service
+
+[Service]
+ExecStart=/www/sentry/bin/supervisord -c /etc/supervisord.conf
+User=sentry
+Group=sentry
+KillMode=process
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
